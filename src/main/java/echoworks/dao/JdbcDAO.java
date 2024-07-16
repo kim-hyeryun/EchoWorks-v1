@@ -22,7 +22,7 @@ public abstract class JdbcDAO {
 			dataSource=(DataSource)new InitialContext().lookup("java:comp/env/jdbc/oracle");
 		} catch (NamingException e) {
 			e.printStackTrace();
-		}
+		}  
 	}
 	
 	// DataSource 객체를 통해 데이터베이스 연결을 얻어 반환한다.
